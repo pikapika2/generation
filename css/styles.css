@@ -1,0 +1,7 @@
+@chartest "utf-8"
+
+
+.pull-left{
+	float: left;
+	padding-right: 40px;
+}

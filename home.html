@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="css/styles.css">
+	<title>Javascript</title>
+</head>
+<body>
+	<header>
+		<p>
+    		<span id="rock" draggable="true">
+    			<img  src="img/fire.png" width="100px" height="50px">
+    			<img  src="img/kaminari.png" width="100px" height="50px">
+    			<img  src="img/suisosui.png" width="100px" height="50px">
+   				<img  src="img/alice.png" width="100px" height="50px">
+   				<img  src="img/nochangerock.jpg" width="100px" height="50px">
+   			</span>
+		</p>
+		<div
+			ondrop="changeIMG();
+			event.preventDefault();"
+			ondragenter="event.preventDefault();"
+			ondragover="event.preventDefault();">
+            <img id="gazo" src="img/dog.png" width="30%" class="pull-left">
+		</div>
+
+		<p id="view_clock"></p>
+		<script type="text/Javascript" src="javascript/myscript.js"></script>
+	</header>
+</body>
+</html>
