@@ -126,13 +126,20 @@ function positionChoice(){
 	//位置情報検出とその後の分岐
 	navigator.geolocation.getCurrentPosition( successFunc , errorFunc ) ;
 	function successFunc( position ){
-		var pos = position.coords.latitude + position.coords.longitude;
+		//var pos = position.coords.latitude + position.coords.longitude;
+		var pos = position.coords.longitude;
 		console.log(pos); //確認
+		if(pos <= 135){
+                        document.getElementById("gazo").src=img[6].n.src;
+                }else{
+                        document.getElementById("gazo").src=img[7].n.src;
+                }
+		/*
 		if(pos*1000 % 2 == 0){
 			document.getElementById("gazo").src=img[6].n.src;
 		}else{
 			document.getElementById("gazo").src=img[7].n.src;
-		}
+		}*/
 	}		
 	function errorFunc( error ){
 		// エラーコードのメッセージを定義
