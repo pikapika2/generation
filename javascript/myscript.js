@@ -129,7 +129,7 @@ function positionChoice(){
 		//var pos = position.coords.latitude + position.coords.longitude;
 		var pos = position.coords.longitude;
 		console.log(pos); //確認
-		if(pos <= 135){
+		if(pos <= 137){
                         document.getElementById("gazo").src=img[6].n.src;
                 }else{
                         document.getElementById("gazo").src=img[7].n.src;
